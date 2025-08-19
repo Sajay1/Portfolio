@@ -6,7 +6,7 @@ export default function About(){
          <Link href="/about">
            <Flex > 
             <Box >
-                <Container color={"black"} textAlign={"justify"}> 
+                <Container color={"black"} textAlign={"justify"} fontFamily={"Oswald"}  fontWeight={400} width={"full"}> 
                      <Text textStyle="3xl" textAlign={"center"}>About Me</Text>
                      
                 <Text textStyle="2xl" textAlign={"center"}  paddingTop={9} paddingBottom={5}>Frontend Developer</Text>

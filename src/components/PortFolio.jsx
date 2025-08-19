@@ -10,20 +10,19 @@ export default function Home(){
         <>
 
         <Link href="/">
-        <Container columns={{base:"xl"}} color={"black"} >
-            <Box >
-                <Flex columns={{base:"xl", }}>
+        <Container columns={{base:"xl"}} color={"black"}>
+                <Flex columns={{base:"xl" }}>
                     <Box p={50} >
                     <Text textStyle="lg" textAlign={"center"}  >I'm</Text>
-                    <Text textStyle="5xl" textAlign={"center"} p={10} fontFamily={"Doto"}  fontWeight={648} >Sajay Suresh K</Text>
-                        <Text textStyle="2xl"  textAlign={"center"} p={4} >A Passionate &nbsp;
+                    <Text textStyle="5xl" textAlign={"center"} p={10} fontFamily={"Doto"}  fontWeight={648}  >Sajay Suresh K</Text>
+                        <Text textStyle="2xl"  textAlign={"center"} p={4} fontFamily={"Doto"}  fontWeight={648} >A Passionate &nbsp;
                                 <ReactTyped  strings={["FRONT-END DEVELOPER","WEB DEVELOPER","MERN DEVELOPER"]}
                           typeSpeed={40}
                           backSpeed={30}
                           loop
                           ></ReactTyped>
                           </Text>
-                             <Text textStyle="lg" textAlign={"center"} >
+                             <Text textStyle="lg" textAlign={"center"} fontFamily={"Oswald"}  fontWeight={648} >
               A dedicated MERN stack developer fresher with a strong foundation
               in MongoDB, Express.js, React, and Node.js. Equipped with web
               development skills, problem-solving abilities, and a passion for
@@ -32,10 +31,12 @@ export default function Home(){
             </Box>
 
             <Box flexBasis="50">
-            <Image src={me} h={350}  w={"970px"} boxShadow={"2xl"} boxShadowColor={"blackAlpha.800"} borderTop={0} borderRight={0} borderRadius={"100%"} />
+            <Image src={me} h={350}  w={"970px"}  boxSize="350px"
+    borderRadius="full"
+    fit="cover"
+    alt="Naruto Uzumaki" />
             </Box>
             </Flex>
-            </Box>
             </Container>
             </Link>
         </>
