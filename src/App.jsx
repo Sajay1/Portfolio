@@ -10,6 +10,7 @@ import * as motion from "motion/react-client"
 import { Stack,Link } from '@chakra-ui/react'
 import About from './components/About'
 import Services from './components/Services'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -59,6 +60,10 @@ function App() {
       
       <Link href='/services'>
       <Services />
+      </Link>
+
+      <Link href='/services'>
+      <Contact />
       </Link>
      </Stack>
     </>

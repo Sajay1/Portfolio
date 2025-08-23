@@ -4,8 +4,8 @@ import React from "react";
 export default function About() {
   return (
     <>
-          <Container direction="column" align="center" p={20} position={"relative"}  textAlign="center" color="black" fontFamily="Oswald" fontWeight={400}>
-            <Text fontSize="3xl" textAlign={"center"} mb={10}>
+          <Container direction="column" align="center" p={20} position={"relative"}  textAlign="center" color="black" fontFamily="Oswald" fontWeight={400} >
+            <Text fontSize="3xl" textAlign={"center"} mb={10} fontFamily={"Doto"} fontWeight={800}>
           About Me
         </Text>
     <Flex justify="center" position={"relative"}
@@ -23,11 +23,19 @@ export default function About() {
             w={{ base: "100%", md: "md" }}
             textAlign="center"
             order={1}
+            _hover={{
+              scale:"1.1",
+              transition:"0.7s ease-in-out"
+            }}
           >
-            <Text fontSize="2xl" mb={4}>
+            <Text fontSize="2xl" mb={4} fontFamily={"Doto"} fontWeight={800}>
               Frontend Developer
             </Text>
-            <Text fontSize="lg" textAlign={"justify"}>
+            <Text fontSize="lg" textAlign={"justify"}
+            _hover={{
+              scale:"1.1",
+              transition:"0.7s ease-in-out"
+            }}>
               Skilled in developing responsive, interactive web applications
               using React.js, HTML5, CSS3, and modern JavaScript (ES6+).
               Passionate about building visually appealing, high-performance web
@@ -43,11 +51,19 @@ export default function About() {
             w={{ base: "100%", md: "md" }}
             textAlign="center"
             order={1}
+            _hover={{
+              scale:"1.1",
+              transition:"0.7s ease-in-out"
+            }}
           >
-            <Text fontSize="2xl" mb={4}>
+            <Text fontSize="2xl" mb={4} fontFamily={"Doto"} fontWeight={800}>
               Backend Developer
             </Text>
-            <Text fontSize="lg" textAlign={"justify"}>
+            <Text fontSize="lg" textAlign={"justify"}
+            _hover={{
+              scale:"1.1",
+              transition:"0.7s ease-in-out"
+            }}>
               Proficient in building scalable and high-performance server-side
               applications using Node.js and Express.js. Experienced in
               designing and implementing RESTful APIs for efficient data

@@ -14,7 +14,7 @@ export default function About() {
 
   return (
       <Container direction="column" align="center" p={20} position={"relative"}  textAlign="center" color="black" fontFamily="Oswald" fontWeight={400}>
-        <Text fontSize="3xl" fontWeight="bold" p={5}>
+        <Text fontSize="3xl" fontWeight="bold" p={5} fontFamily={"Doto"} >
           My Skills
         </Text>
         <Text fontSize="lg" mb={8} textAlign={"justify"}>
@@ -26,16 +26,21 @@ export default function About() {
           maintainable code.
         </Text>
 
-      {/* Skill Icons Grid */}
       <SimpleGrid
         columns={{ base: 1, sm: 2, md: 3 }}
         spacing={10}
         maxW="800px"
-        mx="auto"       // 🔥 THIS CENTERS THE GRID
+        mx="auto"       
         justifyItems="center"
       >
         {images.map((url, index) => (
-          <Box key={index} textAlign="center">
+          <Box key={index} textAlign="center" 
+           _hover={
+            {transform: "scale(1.1)",
+            transition: "all 0.7s ease-in-out",}
+           }
+           
+           >
             <Image
               src={url.link}
               borderRadius="lg"
