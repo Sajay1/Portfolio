@@ -9,7 +9,7 @@ export default function Home() {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Sajay Suresh K - Resume.pdf'; 
+    link.href = '/Sajay Suresh K - MERN - RESUME.pdf'; 
     link.download = 'Sajay Suresh K - Resume';
     link.click();
   };
