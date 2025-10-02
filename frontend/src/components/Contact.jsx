@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Container ,Link,Input,Button ,Image } from "@chakra-ui/react";
+import { Box, Flex, Text,Textarea, Container ,Link,Input,Button ,Image, Center } from "@chakra-ui/react";
 import { wrap } from "framer-motion";
 import React from "react";
 
@@ -52,7 +52,13 @@ export default function About() {
             </Box>
             </Flex>
 
-            <Button pt={10} pb={5}>Submit</Button>
+            <Flex gap={9} direction={"column"} justify={"center"} mt={6} px={9} >
+              <Box>
+                <Textarea placeholder="Enter message" ></Textarea>
+              </Box>
+            </Flex>
+
+            <Button pt={4} mb={2} >Submit</Button>
            
             </Flex>
             
