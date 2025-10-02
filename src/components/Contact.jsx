@@ -5,7 +5,7 @@ import React from "react";
 export default function About() {
   return (
     <>
-          <Container direction="column" align="center" p={20} position={"relative"}  textAlign="center" color="black" fontFamily="Oswald" fontWeight={400}>
+          <Box direction="column" align="center" p={20} position={"relative"}  textAlign="center" color="black" fontFamily="Oswald" fontWeight={400}>
             <Text fontSize="3xl" textAlign={"center"} mb={10} fontFamily={"Doto"} fontWeight={700}>
           GET IN TOUCH
         </Text>
@@ -110,7 +110,7 @@ export default function About() {
     </Flex>
 
 
-     </Container>
+     </Box>
     </>
   );
 }
