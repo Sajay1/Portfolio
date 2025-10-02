@@ -4,7 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/PortFolio'
 import { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import img from "./assets/logo.png"
 import * as motion from "motion/react-client"
 import { Stack, Link } from '@chakra-ui/react'
@@ -14,16 +14,25 @@ import Contact from './components/Contact'
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const location = useLocation();
+  
+  // Check if current route is home
+  const isHomePage = location.pathname === '/';
     
-  // Simulate loading effect (2 seconds)
+  // Simulate loading effect (2 seconds) only for home page
   useEffect(() => {
-    const timer = setTimeout(() => {
+    if (isHomePage) {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    } else {
+      // If not home page, set loading to false immediately
       setLoading(false);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
+    }
+  }, [isHomePage]);
     
-  if (loading) {
+  if (loading && isHomePage) {
     return (
       <Flex
         minH="100vh"
@@ -70,8 +79,7 @@ function App() {
             color="gray.600"
             fontFamily="Doto"
           >
-            
-            
+            Loading
             {/* Animated dots */}
             <motion.span
               animate={{ opacity: [0, 1, 0] }}
