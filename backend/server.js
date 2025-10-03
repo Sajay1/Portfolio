@@ -26,12 +26,12 @@ app.post('/api/contact', async (req, res) => {
 
     // Use a simple from address that doesn't require domain verification
     const mailOptions = {
-      from: `"Portfolio"  info@mailtrap.ciz`, // Simple from address
+      from: `"Portfolio" <demo@anydomain.com>`, // Simple from address
       to: 'sajaysuresh307@gmail.com',
       replyTo: email, // This allows you to reply to the actual sender
       subject: `New Contact from ${firstName} ${lastName}`,
       html: `
-        <h2>New Contact Form Submission</h2>
+        <h2>Message</h2>
         <p><strong>Name:</strong> ${firstName} ${lastName}</p>
         <p><strong>Phone:</strong> ${phone}</p>
         <p><strong>Email:</strong> ${email}</p>
