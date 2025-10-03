@@ -119,19 +119,25 @@ export default function Home() {
          <motion.div
           initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
+          transition={{ duration: 1, delay: 0.2 }}
           whileHover={{ 
+            boxShadow: "0 20px 20px 20px rgba(0, 0, 0, 0.25)",
             rotate: 3,
             scale: 1.05,
-            transition: { duration: 0.3 }
+            transition: { duration: 0.2 },
           }}
+
+           style={{
+    borderRadius: "50%", 
+  }}
+
           className="float"
         >
          
           <Image 
               src={me} 
-              h={{ base: 23, md: 23 }}  
-              w={{ base: 23, md: 23 }}  
+              h={{ base: 25, md: 25 }}  
+              w={{ base: 25, md: 25 }}  
               boxSize={{ base: "250px", md: "350px" }}
               borderRadius="full"
               
