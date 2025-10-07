@@ -113,7 +113,7 @@ function App() {
       transition={{ duration: 0.8 }}
     >
       <Navbar fontFamily={"Doto"} fontWeight={648}/>
-      <Box bgColor={'white'} h={"100vh"}>
+      <Box bgColor={'white'}>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/about' element={<About/>}/>

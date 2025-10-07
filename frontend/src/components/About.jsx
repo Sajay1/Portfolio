@@ -5,7 +5,7 @@ import React from "react";
 export default function About() {
   return (
     <>
-      <Box maxW="container.xl" p={{ base: 10, md: 20 }} position={"relative"}>
+      <Box maxW="container.xl" p={{ base: 10, md: 20 }} position={"relative"}  h={"100vh"} >
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

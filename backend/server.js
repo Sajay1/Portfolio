@@ -11,16 +11,18 @@ app.use(express.urlencoded({ extended: true }))
 
 // CORRECT Mailtrap Live SMTP configuration
 const transporter = nodemailer.createTransport({
-  host: "live.smtp.mailtrap.io",
-  port: 587,
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
   auth: {
-    user: "api",
-    pass: "c3271d469509e134c416dfe27fbc71e0"  // Same API token as password
+    user: "sajaysuresh307@gmail.com",
+    pass: "nvmz dtth cisg sxjp"  
   },
 });
 
 // Contact form endpoint
 app.post('/api/contact', async (req, res) => {
+
   try {
     const { firstName, lastName, phone, email, message } = req.body;
 

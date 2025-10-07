@@ -14,7 +14,7 @@ export default function Services() {
   ];
 
   return (
-    <Container maxW="container.xl" p={{ base: 10, md: 20 }} position={"relative"} color="black">
+    <Box maxW="container.xl" p={{ base: 10, md: 20 }} position={"relative"} color="black">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -112,12 +112,12 @@ export default function Services() {
           { skill: "MongoDB", level: 75 },
           { skill: "HTML/CSS", level: 95 }
         ].map((item, index) => (
-          <Box key={index} mb={4}>
-            <Flex justify="space-between" mb={2}>
+          <Box key={index} mb={4} >
+            <Flex justify="space-between" mb={2} >
               <Text fontFamily="Oswald">{item.skill}</Text>
               <Text fontFamily="Oswald">{item.level}%</Text>
             </Flex>
-            <Box bg="gray.200" borderRadius="full" h="10px" overflow="hidden">
+            <Box bg="gray.200" borderRadius="full" h="10px" overflow="hidden"  >
               <motion.div
                 initial={{ width: 0 }}
                 whileInView={{ width: `${item.level}%` }}
@@ -133,6 +133,6 @@ export default function Services() {
           </Box>
         ))}
       </motion.div>
-    </Container>
+    </Box>
   );
 }

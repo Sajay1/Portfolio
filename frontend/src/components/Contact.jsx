@@ -1,5 +1,6 @@
-import { Box, Flex, Text, Textarea, Input, Button, Image, } from "@chakra-ui/react";
+import { Box, Flex, Text, Textarea, Input, Button, Image } from "@chakra-ui/react";
 import React, { useState } from "react";
+import { useToast } from "@chakra-ui/toast";
 
 export default function About() {
   const [formData, setFormData] = useState({
@@ -71,11 +72,11 @@ export default function About() {
 
   return (
     <>
-      <Box direction="column" align="center" p={20} position={"relative"} textAlign="center" color="black" fontFamily="Oswald" fontWeight={400}>
+      <Box direction="column" align="center" p={20} position={"relative"} textAlign="center" color="black" fontFamily="Oswald" fontWeight={400}  h={"100vh"}>
         <Text fontSize="3xl" textAlign={"center"} mb={10} fontFamily={"Doto"} fontWeight={700}>
           GET IN TOUCH
         </Text>
-        <Flex justify="center" position={"relative"} color={"black"} fontFamily={"Oswald"} fontWeight={400} width={"full"} textAlign="center">
+        <Flex justify="center" position={"relative"} color={"black"} fontFamily={"Oswald"} fontWeight={400} width={"full"} textAlign="center" >
           <Flex justify="center" wrap="wrap">
             <Box border={"md"} boxShadow={"lg"} p={6} m={5} w={{ base: "100%", md: "md" }} textAlign="center" order={1}>
               <Flex justifyContent={"center"} >
