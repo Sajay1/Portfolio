@@ -1,4 +1,5 @@
 import { Box, Flex, Text, Textarea, Input, Button, Image } from "@chakra-ui/react";
+import axios from "axios"
 import React, { useState } from "react";
 import { useToast } from "@chakra-ui/toast";
 
@@ -26,8 +27,7 @@ export default function About() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://portfolio-hs5k.onrender.com/api/contact', {
-        method: 'POST',
+      const response = await axios.post('https://portfolio-hs5k.onrender.com/api/contact', {
         headers: {
           'Content-Type': 'application/json',
         },
