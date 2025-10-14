@@ -26,7 +26,7 @@ export default function About() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://portfolio-1-h379.onrender.com/api/contact', {
+      const response = await fetch('https://portfolio-hs5k.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
