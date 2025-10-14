@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }))
 // CORRECT Mailtrap Live SMTP configuration
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false,
   auth: {
     user: "sajaysuresh307@gmail.com",
     pass: "nvmz dtth cisg sxjp"  
